@@ -1,0 +1,33 @@
+[device]
+  # Device name.
+  name = "RAK2270 RAK Sticker Tracker"
+
+  # Device description.
+  description = "The RAK2270 is a LoRaWAN device in sticker formfactor that can be used for tracking applications. It has no GPS but uses location of gateways to estimate position. It also has built-in temperature sensor.
+  [device.metadata]
+    # Product URL.
+    product_url = "https://store.rakwireless.com/products/rak2270-rak-sticker-tracker"
+
+    # Documentation URL.
+    documentation_url = "https://docs.rakwireless.com/Product-Categories/WisNode/RAK2270"
+
+
+  # Device firmware version.
+  #
+  # This section can be repeated in case multiple firmware versions exist.
+  # As a new firmware version can change the supported profiles / regions and
+  # payload format, each firmware version has its own profiles and codec
+  # configuration.
+  [[device.firmware]]
+    # Firmware version.
+    version = "1.1.0"
+
+    # List of supported profiles.
+    #
+    # This list refers to one or multiple profiles in the profiles/ directory.
+    profiles = ["EU868_1_0_3.toml", "RU864_1_0_3.toml", "IN865_1_0_3.toml", "US915_1_0_3.toml", "AU915_1_0_3.toml", "KR920_1_0_3.toml", "AS923_1_1_0_3.toml", "AS923_2_1_0_3.toml", "AS923_3_1_0_3.toml", "AS923_4_1_0_3.toml"]
+
+    # Payload codec.
+    #
+    # In case no codec is available, you can remove this option.
+    codec = "rak_standard.js"

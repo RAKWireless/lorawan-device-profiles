@@ -1,13 +1,13 @@
 [profile]
-  # THIS IS FOR ARDUINO DEVICES WITH LORAMAC STACK V1.0.2
+  # THIS IS FOR RUI3 DEVICES WITH RUI3 V4.2.0 OR NEWER WITH LORAMAC STACK V1.0.4
   # Region Common-name.
   #
   # Please refer to the LoRaWAN Regional Parameters specification for the available
   # common-names.
-  region = "IN865"
+  region = "AS923-3"
 
   # LoRaWAN mac-version (1.x.y).
-  mac_version = "1.0.2"
+  mac_version = "1.0.4"
 
   # LoRaWAN Regional Parameters revision.
   #
@@ -20,7 +20,7 @@
   # Device supports Class-B.
   #
   # If set to true, do not forget to configure class_b section below.
-  supports_class_b = false
+  supports_class_b = true
 
   # Device supports Class-C.
   #
@@ -28,7 +28,7 @@
   supports_class_c = true
 
   # Max EIRP supported by device.
-  max_eirp = 22
+  max_eirp = 16
 
   # ABP settings.
   #
@@ -41,10 +41,10 @@
     rx1_dr_offset = 0
 
     # RX2 DR.
-    rx2_dr = 0
+    rx2_dr = 2
 
     # RX2 frequency (Hz).
-    rx2_freq = 866550000
+    rx2_freq = 916600000
 
 
   # Class-B settings.
@@ -66,7 +66,7 @@
     ping_slot_dr = 0
 
     # Ping-slot frequency (Hz).
-    ping_slot_freq = 866550000
+    ping_slot_freq = 916600000
 
 
   # Class-C settings.

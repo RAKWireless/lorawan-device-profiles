@@ -1,5 +1,5 @@
 [profile]
-  # THIS IS FOR ARDUINO DEVICES WITH LORAMAC STACK V1.0.2
+  # THIS IS FOR RUI3 DEVICES UP TO RUI3 V4.1.1 WITH LORAMAC STACK V1.0.3
   # Region Common-name.
   #
   # Please refer to the LoRaWAN Regional Parameters specification for the available
@@ -7,7 +7,7 @@
   region = "IN865"
 
   # LoRaWAN mac-version (1.x.y).
-  mac_version = "1.0.2"
+  mac_version = "1.0.3"
 
   # LoRaWAN Regional Parameters revision.
   #
@@ -20,7 +20,7 @@
   # Device supports Class-B.
   #
   # If set to true, do not forget to configure class_b section below.
-  supports_class_b = false
+  supports_class_b = true
 
   # Device supports Class-C.
   #

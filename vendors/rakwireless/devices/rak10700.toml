@@ -1,0 +1,34 @@
+[device]
+  # Device name.
+  name = "RAK10702 WisBlock Indoor Comfort Node"
+
+  # Device description.
+  description = "The RAK10700 GNSS Tracker for LoRaWAN is a location tracker built with WisBlock modules. It features a u-blox ZOE-M8Q GNSS location module for precise tracking.
+  # Device metadata (optional).
+  [device.metadata]
+    # Product URL.
+    product_url = "https://store.rakwireless.com/products/rak10700-gnss-tracker-for-lorawan"
+
+    # Documentation URL.
+    documentation_url = "https://docs.rakwireless.com/Product-Categories/WisBlock/RAK10700/Overview/"
+
+
+  # Device firmware version.
+  #
+  # This section can be repeated in case multiple firmware versions exist.
+  # As a new firmware version can change the supported profiles / regions and
+  # payload format, each firmware version has its own profiles and codec
+  # configuration.
+  [[device.firmware]]
+    # Firmware version.
+    version = "1.2.0"
+
+    # List of supported profiles.
+    #
+    # This list refers to one or multiple profiles in the profiles/ directory.
+    profiles = ["EU868_1_0_2.toml", "RU864_1_0_2.toml", "IN865_1_0_2.toml", "US915_1_0_2.toml", "AU915_1_0_2.toml", "KR920_1_0_2.toml", "AS923_1_1_0_2.toml", "AS923_2_1_0_2.toml", "AS923_3_1_0_2.toml", "AS923_4_1_0_2.toml"]
+
+    # Payload codec.
+    #
+    # In case no codec is available, you can remove this option.
+    codec = "rak_standard.js"
